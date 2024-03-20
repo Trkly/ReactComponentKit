@@ -7,9 +7,9 @@ module.exports = {
   // 继承的规则 / 插件
   extends: [
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
     'prettier',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:@typescript-eslint/recommended'
   ],
   // 解析
   parser: '@typescript-eslint/parser',
@@ -22,7 +22,7 @@ module.exports = {
     sourceType: 'module'
   },
   // 插件
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   settings: {
     // 自动检测 React 的版本
     react: {
@@ -33,6 +33,7 @@ module.exports = {
   rules: {
     'react/prop-types': 0,
     'react/forbid-prop-types': 0,
-    'react/jsx-indent': 0
+    'react/jsx-indent': 0,
+    'prettier/prettier': 'error'
   }
 }

@@ -2011,6 +2011,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/classnames@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.npmmirror.com/@types/classnames/-/classnames-2.3.1.tgz#3c2467aa0f1a93f1f021e3b9bcf938bd5dfdc0dd"
+  integrity sha512-zeOWb0JGBoVmlQoznvqXbE0tEC/HONsnoUNH19Hc96NFsTAwTXbTqb8FMYkru1F/iqp7a18Ws3nWJvtA1sHD1A==
+  dependencies:
+    classnames "*"
+
 "@types/connect-history-api-fallback@^1.3.5":
   version "1.5.4"
   resolved "https://registry.npmmirror.com/@types/connect-history-api-fallback/-/connect-history-api-fallback-1.5.4.tgz#7de71645a103056b48ac3ce07b3520b819c1d5b3"
@@ -2372,15 +2379,15 @@
     "@typescript-eslint/typescript-estree" "5.62.0"
     debug "^4.3.4"
 
-"@typescript-eslint/parser@^7.3.1":
-  version "7.3.1"
-  resolved "https://registry.npmmirror.com/@typescript-eslint/parser/-/parser-7.3.1.tgz#c4ba7dc2744318a5e4506596cbc3a0086255c526"
-  integrity sha512-Rq49+pq7viTRCH48XAbTA+wdLRrB/3sRq4Lpk0oGDm0VmnjBrAOVXH/Laalmwsv2VpekiEfVFwJYVk6/e8uvQw==
+"@typescript-eslint/parser@^7.3.2-alpha.2":
+  version "7.3.2-alpha.2"
+  resolved "https://registry.npmmirror.com/@typescript-eslint/parser/-/parser-7.3.2-alpha.2.tgz#a8903e257053ad9c438bacb0e93920600ae2ba43"
+  integrity sha512-oYbf5Zl3pvs2YvsXzsup1tVJW/L767+VhezPU0jvl/tWLy+ScSwtDhTtweNqr8EG2AkwjmH9H5a1LS2b6VNFSQ==
   dependencies:
-    "@typescript-eslint/scope-manager" "7.3.1"
-    "@typescript-eslint/types" "7.3.1"
-    "@typescript-eslint/typescript-estree" "7.3.1"
-    "@typescript-eslint/visitor-keys" "7.3.1"
+    "@typescript-eslint/scope-manager" "7.3.2-alpha.2"
+    "@typescript-eslint/types" "7.3.2-alpha.2"
+    "@typescript-eslint/typescript-estree" "7.3.2-alpha.2"
+    "@typescript-eslint/visitor-keys" "7.3.2-alpha.2"
     debug "^4.3.4"
 
 "@typescript-eslint/scope-manager@5.62.0":
@@ -2398,6 +2405,14 @@
   dependencies:
     "@typescript-eslint/types" "7.3.1"
     "@typescript-eslint/visitor-keys" "7.3.1"
+
+"@typescript-eslint/scope-manager@7.3.2-alpha.2":
+  version "7.3.2-alpha.2"
+  resolved "https://registry.npmmirror.com/@typescript-eslint/scope-manager/-/scope-manager-7.3.2-alpha.2.tgz#6fc82c221746b39978b60bf34eabd9d71a155c5e"
+  integrity sha512-hWyWyPi/jFYDVu3zvFDx+44VJOBEDxQcCSWvWKLF7pTxGFkFcehPv21SDNquivC4oWXBRAWGEzHaVO9L2omPvw==
+  dependencies:
+    "@typescript-eslint/types" "7.3.2-alpha.2"
+    "@typescript-eslint/visitor-keys" "7.3.2-alpha.2"
 
 "@typescript-eslint/type-utils@5.62.0":
   version "5.62.0"
@@ -2429,6 +2444,11 @@
   resolved "https://registry.npmmirror.com/@typescript-eslint/types/-/types-7.3.1.tgz#ae104de8efa4227a462c0874d856602c5994413c"
   integrity sha512-2tUf3uWggBDl4S4183nivWQ2HqceOZh1U4hhu4p1tPiIJoRRXrab7Y+Y0p+dozYwZVvLPRI6r5wKe9kToF9FIw==
 
+"@typescript-eslint/types@7.3.2-alpha.2":
+  version "7.3.2-alpha.2"
+  resolved "https://registry.npmmirror.com/@typescript-eslint/types/-/types-7.3.2-alpha.2.tgz#010b3a00122f9fd23cc9d919227e945aaef057a4"
+  integrity sha512-BDBST+bQYf5i/55mgod7f3a1C6RYLeNh4qAoVTJx2zav1B30D8K+2mIGh9AxaAxryjNqJticu/SKmwCcZ6J6cw==
+
 "@typescript-eslint/typescript-estree@5.62.0":
   version "5.62.0"
   resolved "https://registry.npmmirror.com/@typescript-eslint/typescript-estree/-/typescript-estree-5.62.0.tgz#7d17794b77fabcac615d6a48fb143330d962eb9b"
@@ -2449,6 +2469,20 @@
   dependencies:
     "@typescript-eslint/types" "7.3.1"
     "@typescript-eslint/visitor-keys" "7.3.1"
+    debug "^4.3.4"
+    globby "^11.1.0"
+    is-glob "^4.0.3"
+    minimatch "9.0.3"
+    semver "^7.5.4"
+    ts-api-utils "^1.0.1"
+
+"@typescript-eslint/typescript-estree@7.3.2-alpha.2":
+  version "7.3.2-alpha.2"
+  resolved "https://registry.npmmirror.com/@typescript-eslint/typescript-estree/-/typescript-estree-7.3.2-alpha.2.tgz#e4785f92da4dd1a51aebd6dd796fb52cc28de6c5"
+  integrity sha512-2Eiy+MC4obtNzLKjvOOgR34cRpmH1J927dlc+xFXT/47yrluJAJrGP8UDDc5u3cfT9DmFu4+ha8tiy+m6WmtpA==
+  dependencies:
+    "@typescript-eslint/types" "7.3.2-alpha.2"
+    "@typescript-eslint/visitor-keys" "7.3.2-alpha.2"
     debug "^4.3.4"
     globby "^11.1.0"
     is-glob "^4.0.3"
@@ -2497,6 +2531,14 @@
   integrity sha512-9RMXwQF8knsZvfv9tdi+4D/j7dMG28X/wMJ8Jj6eOHyHWwDW4ngQJcqEczSsqIKKjFiLFr40Mnr7a5ulDD3vmw==
   dependencies:
     "@typescript-eslint/types" "7.3.1"
+    eslint-visitor-keys "^3.4.1"
+
+"@typescript-eslint/visitor-keys@7.3.2-alpha.2":
+  version "7.3.2-alpha.2"
+  resolved "https://registry.npmmirror.com/@typescript-eslint/visitor-keys/-/visitor-keys-7.3.2-alpha.2.tgz#8c142edde359ba0f658e239b5440a22ac4f422fd"
+  integrity sha512-dbr9yaygXGSMTPlmZouTLD7yApD/SUTqNX2sOiPo4kWcCE2C7CV1sl/Gkoi6itCGZBCOyNcFoOvVOlT07WM/4A==
+  dependencies:
+    "@typescript-eslint/types" "7.3.2-alpha.2"
     eslint-visitor-keys "^3.4.1"
 
 "@ungap/structured-clone@^1.2.0":
@@ -3505,6 +3547,11 @@ cjs-module-lexer@^1.0.0:
   version "1.2.3"
   resolved "https://registry.npmmirror.com/cjs-module-lexer/-/cjs-module-lexer-1.2.3.tgz#6c370ab19f8a3394e318fe682686ec0ac684d107"
   integrity sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==
+
+classnames@*, classnames@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.npmmirror.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
 
 clean-css@^5.2.2:
   version "5.3.3"
