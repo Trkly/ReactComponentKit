@@ -37,12 +37,13 @@ type AnchorButtonProps = BaseButtonProps &
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
 const Button: React.FC<BaseButtonProps> = (props) => {
-  const { btnType, disabled, size, children, href, ...restProps } = props
+  const { btnType, disabled, size, children, href, className, ...restProps } =
+    props
   // btn, btn-lg, btn-primary
   /**
    * classNames接收一个字符串和一个对象作为参数，然后根据对象中的键和值来决定哪些类名应该被包含在最终的字符串中
    */
-  const classes = classNames('btn', {
+  const classes = classNames('btn', className, {
     [`btn-${btnType}`]: btnType,
     [`btn-${size}`]: size,
     disabled: btnType === ButtonType.Link && disabled
