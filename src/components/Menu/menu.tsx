@@ -28,7 +28,7 @@ interface IMenuContext {
 // 这个上下文对象因为其他组件也要使用（因为是共享）。所以要进行导出
 export const MenuContext = createContext<IMenuContext>({ index: '0' })
 
-const Menu: React.FC<MenuProps> = (props) => {
+export const Menu: React.FC<MenuProps> = (props) => {
   const {
     className,
     mode,

@@ -11,7 +11,7 @@ export interface SubMenuProps {
   className?: string
 }
 
-const SubMenu: React.FC<SubMenuProps> = ({
+export const SubMenu: React.FC<SubMenuProps> = ({
   index,
   children,
   className,
@@ -39,7 +39,7 @@ const SubMenu: React.FC<SubMenuProps> = ({
     e.preventDefault()
     timer = setTimeout(() => {
       setOpen(toggle)
-    })
+    }, 300)
   }
   const clickEvents =
     context.mode === 'vertical'
@@ -54,7 +54,7 @@ const SubMenu: React.FC<SubMenuProps> = ({
             handleMouse(e, true)
           },
           onMouseLeave: (e: React.MouseEvent) => {
-            handleMouse(e, true)
+            handleMouse(e, false)
           }
         }
       : {}

@@ -9,7 +9,7 @@ export interface MenuItemProps {
   style?: React.CSSProperties
 }
 
-const MenuItem: React.FC<MenuItemProps> = (props) => {
+export const MenuItem: React.FC<MenuItemProps> = (props) => {
   const { disabled, className, style, children, index } = props
   const context = useContext(MenuContext)
   const classes = classNames('menu-item', className, {

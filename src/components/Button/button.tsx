@@ -17,17 +17,17 @@ interface BaseButtonProps {
  * 它代表所有可以应用于 HTML 按钮（<button> 标签）的属性。
  * 由于 React.ButtonHTMLAttributes 的泛型参数是 HTMLElement，这意味着它专门针对 HTML 元素的按钮属性
  */
-type NativeButtonProps = BaseButtonProps &
+export type NativeButtonProps = BaseButtonProps &
   React.ButtonHTMLAttributes<HTMLElement>
 /**
  * React.AnchorHTMLAttributes 类型代表所有可以应用于 HTML 锚点（<a> 标签）的属性。
  */
-type AnchorButtonProps = BaseButtonProps &
+export type AnchorButtonProps = BaseButtonProps &
   React.AnchorHTMLAttributes<HTMLElement>
 // 使用 Partial 工具类型，将交叉类型的所有属性都变为可选的
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
-const Button: React.FC<BaseButtonProps> = (props) => {
+export const Button: React.FC<BaseButtonProps> = (props) => {
   const { btnType, disabled, size, children, href, className, ...restProps } =
     props
   // btn, btn-lg, btn-primary

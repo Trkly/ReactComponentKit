@@ -1,15 +1,28 @@
 import React from 'react'
-import Button, { ButtonSize, ButtonType } from './components/Button/button'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import MenuItem from './components/Menu/menuItem'
+import SubMenu from './components/Menu/subMenu'
+import Menu, { MenuProps } from './components/Menu/menu'
+import Icon from './components/Icon/icon'
+library.add(fas)
 function App() {
+  const testVerProps: MenuProps = {
+    defaultIndex: '0',
+    mode: 'horizontal'
+  }
   return (
     <div className="App">
-      <Button> Hello</Button>
-      <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>
-        NIHAO Hello
-      </Button>
-      <Button btnType={ButtonType.Link} href="www.baidu.com" disabled>
-        Hello
-      </Button>
+      <Icon icon="arrow-up" theme="dark" size="10x" />
+      <Menu {...testVerProps}>
+        <MenuItem>active</MenuItem>
+        <MenuItem disabled>disabled</MenuItem>
+        <MenuItem>xyz</MenuItem>
+        <SubMenu title="dropdown">
+          <MenuItem>welcome</MenuItem>
+          <MenuItem>qqq</MenuItem>
+        </SubMenu>
+      </Menu>
     </div>
   )
 }
