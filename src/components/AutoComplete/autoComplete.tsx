@@ -96,6 +96,9 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
     }
     triggerSearch.current = false
   }
+  const handleFocus = () => {
+    triggerSearch.current = true
+  }
   const renderTemplate = (item: DataSourceType) => {
     return renderOption ? renderOption(item) : item.value
   }
@@ -135,6 +138,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
         onChange={handleChange}
         {...restProps}
         onKeyDown={handleKeyDown}
+        onFocus={handleFocus}
       />
 
       {suggestions.length > 0 && generateDropdown()}
