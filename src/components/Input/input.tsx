@@ -42,11 +42,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   const fixControlledValue = (value: unknown) => {
     if (typeof value === 'undefined' || value === null) {
       return ''
-    }
-    if (typeof value === 'number') {
+    } else if (typeof value === 'number') {
       return value
+    } else {
+      return value!.toString()
     }
-    return value.toString()
   }
   if ('value' in props) {
     delete restProps.defaultValue

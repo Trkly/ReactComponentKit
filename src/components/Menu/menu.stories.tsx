@@ -23,6 +23,7 @@ export const ADefaultMenu: StoryObj<typeof Menu> = (args: MenuProps) => (
   </Menu>
 )
 ADefaultMenu.storyName = '默认Menu'
+
 export const BClickMenu: StoryObj<typeof Menu> = (args: MenuProps) => (
   <Menu {...args} defaultIndex="0" mode="vertical">
     <MenuItem>cool link</MenuItem>

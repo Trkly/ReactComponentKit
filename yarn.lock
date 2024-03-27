@@ -2167,7 +2167,7 @@
     lodash "^4.17.21"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-docs@8.0.4":
+"@storybook/addon-docs@8.0.4", "@storybook/addon-docs@^8.0.4":
   version "8.0.4"
   resolved "https://registry.npmmirror.com/@storybook/addon-docs/-/addon-docs-8.0.4.tgz#5cee04859c017bdd0f46bc7337a5064cd415c211"
   integrity sha512-m0Y7qGAMnNPLEOEgzW/SBm8GX0xabJBaRN+aYijO6UKTln7F6oXXVve+xPC0Y4s6Gc9HZFdJY8WXZr1YSGEUVA==

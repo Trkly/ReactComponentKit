@@ -1,0 +1,23 @@
+import { Canvas, Meta } from '@storybook/blocks'
+
+import * as AutoCompleteStories from './autoComplete.stories'
+
+<Meta of={AutoCompleteStories} />
+
+# AutoComplete 组件
+
+`AutoComplete` 组件是一个用于实现自动完成功能的输入框。它可以从预定义的选项列表中筛选出匹配项，或者通过异步请求获取数据来提供选项。
+
+## 基本用法
+
+以下是一个 `AutoComplete` 组件的基本用法示例。它展示了如何使用组件并处理选项的选中事件。
+
+<Canvas of={AutoCompleteStories.SimpleComplete} />
+
+以下是一个自定义下拉选项组件的基本用法示例。
+
+<Canvas of={AutoCompleteStories.CustomComplete} />
+
+以下是一个异步请求Github用户名组件的基本用法示例。
+
+<Canvas of={AutoCompleteStories.AjaxComplete} />
