@@ -9,7 +9,7 @@ interface BaseButtonProps {
   disabled?: boolean
   size?: ButtonSize
   btnType?: ButtonType
-  children: React.ReactNode
+  children?: React.ReactNode
   href?: string
 }
 /**
@@ -27,7 +27,7 @@ export type AnchorButtonProps = BaseButtonProps &
 // 使用 Partial 工具类型，将交叉类型的所有属性都变为可选的
 export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>
 
-export const Button: React.FC<BaseButtonProps> = (props) => {
+export const Button: React.FC<ButtonProps> = (props) => {
   const { btnType, disabled, size, children, href, className, ...restProps } =
     props
   // btn, btn-lg, btn-primary
