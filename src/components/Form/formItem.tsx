@@ -117,12 +117,12 @@ export const FormItem: FC<FormItemProps> = (props) => {
       )}
       <div className="zzking-form-item">
         <div className={itemClass}>{returnChildNode}</div>
+        {hasError && (
+          <div className="zzking-form-item-explain">
+            <span>{errors[0].message}</span>
+          </div>
+        )}
       </div>
-      {hasError && (
-        <div className="zzking-form-item-explain">
-          <span>{errors[0].message}</span>
-        </div>
-      )}
     </div>
   )
 }
